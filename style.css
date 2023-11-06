@@ -1,0 +1,43 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    font-size: 10em;
+    margin-right: 10px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    text-transform: initial;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.running {
+    background-color: red;
+}
+
+.stopped {
+    background-color: green;
+}
+
+.white-text {
+    color: white; /* Couleur du texte lorsque le bouton est rouge */
+}
+
+.black-text {
+    color: black; /* Couleur du texte lorsque le bouton est vert */
+}
