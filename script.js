@@ -1,4 +1,4 @@
-alert('Bienvenu dans notre test de temps de réaction');
+alert('Bienvenue M.Buonocore :D');
 
 let timer;
 let isRunning = false;
@@ -27,7 +27,6 @@ function startStop() { // Cette fonction permet de démarrer et de faire le test
         setTimeout(() => {
             document.getElementById("startStopButton").classList.remove("running");
             document.getElementById("startStopButton").classList.add("stopped");
-            document.getElementById("chronometer").classList.add("visible");
             document.getElementById("chronometer").classList.remove("black-text");
             document.getElementById("chronometer").classList.add("white-text");
             resetChronometer();
@@ -38,9 +37,9 @@ function startStop() { // Cette fonction permet de démarrer et de faire le test
 }
 
 
-function updateChronometer() {
-    milliseconds += 10;
-    if (milliseconds === 1000) {
+function updateChronometer() { // Actualise le chronomètre à chaque 0.01 secondes
+    milliseconds += 17;
+    if (milliseconds >= 1000) {
         milliseconds = 0;
         seconds++;
     }
@@ -51,7 +50,7 @@ function updateChronometer() {
     document.getElementById("chronometer").textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}:${milliseconds < 10 ? '00' : milliseconds < 100 ? '0' : ''}${milliseconds}`;
 }
 
-function resetChronometer() {
+function resetChronometer() { // Rénitialise le chronomètre
     clearInterval(timer);
     document.getElementById("chronometer").textContent = '0:00:000';
     milliseconds = 0;
@@ -61,7 +60,7 @@ function resetChronometer() {
     document.getElementById("startStopButton").textContent = "Démarrer";
 }
 
-function startStopAuto() {
+function startStopAuto() { // Redémarre le chronomètre automatiquement sans appuyer sur aucun bouton
     if (isRunning) {
         clearInterval(timer);
         document.getElementById("startStopButton").textContent = "Démarrer";
@@ -76,6 +75,6 @@ function startStopAuto() {
     isRunning = !isRunning;
 }
 
-document.getElementById("startStopButton").addEventListener("click", startStop);
-document.getElementById("resetButton").addEventListener("click", resetChronometer);
+document.getElementById("startStopButton").addEventListener("click", startStop); // Associe la fonction startStopButton au clique de la souris sur le bouton
+document.getElementById("resetButton").addEventListener("click", resetChronometer); // Associe la fonction resetButton au clique de la souris sur le bouton
 
