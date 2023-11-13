@@ -1,43 +1,43 @@
 
 body {
-    background-color: black;
+    background-color: lightblue;
     color: white;
-    font-family: Arial, sans-serif; /* Type d'écriture */
+    font-family: Arial, sans-serif;
 }
 
 button {
     font-size: 10em;
-    margin-right: 10px; /* Défini la taille des boutons */
+    margin-right: 10px;
 }
 
 h1{
-    text-align: center; /* alignement du texte */
-    text-transform: uppercase;  /* Met en majuscule toute les lettres */
-    border: 2px solid white; /* Fait la bordure */
-    border-radius: 10px; /* Taile de la bordure */
-    color: white; /* Couleur du texte */
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
 }
 
 h2{
     text-align: center;
     text-transform: initial;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 
 .running {
-    background-color: red; /* Arrière plan du bouton démarrer rouge */
+    background-color: red;
 }
 
 .stopped {
-    background-color: green; /* Arrière plan du bouton démarrer vert */
+    background-color: green;
 }
 
 .white-text {
-    color: white; /* Couleur du chrono lorsque le bouton est vert */
+    color: white; /* Couleur du texte lorsque le bouton est rouge */
 }
 
 .black-text {
-    color: black; /* Couleur du chrono lorsque le bouton est rouge */
+    color: lightblue; /* Couleur du texte lorsque le bouton est vert */
 }
